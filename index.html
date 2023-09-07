@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Log in</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h3>Registrarse</h3>
+    <p>Complete el formulario con sus datos</p>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="first-name">Nombre: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Apellido: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="user">Usuario: <input id="last-name" name="user" type="text" pattern="[A-Za-z][A-Za-z0-9]*[0-9][A-Za-z0-9]*" required /></label>
+        <label for="email">Correo electrónico: <input id="email" name="email" type="email" required /></label>
+        <label for="new-password">Nueva contraseña: <input id="new-password" name="pass" pattern="[A-Za-z][A-Za-z0-9]*[0-9][A-Za-z0-9]*" title="La contraseña debe de contener al menos 8 digitos con números y letras mayúsculas" required /></label>
+      </fieldset>
+      <fieldset>
+        
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" />Deseo recibir correos electrónicos con novedades</label>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" />Acepto los <a href="https://www.freecodecamp.org/news/terms-of-service/">terminos y condiciones</a>
+        </label>
+      </fieldset>
+      <fieldset>
+        <h3>Iniciar sesión</h3>
+        
+        <label for="user">Ingrese su usuario o correo electrónico: <input id="user" name="last-name" type="text" required /></label>
+        <label for="new-password">Ingrese su contraseña: <input id="new-password" name="pass" pattern="[A-Za-z][A-Za-z0-9]*[0-9][A-Za-z0-9]*" title="La contraseña debe de contener al menos 8 digitos con números y letras mayúsculas" required /></label>
+      </fieldset>
+      <input type="submit" value="Ingresar" />
+    </form>
+  </body>
+</html>
