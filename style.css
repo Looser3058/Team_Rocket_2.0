@@ -18,7 +18,7 @@ section{
 .hero{
 
     height: 100vh;
-    background-image: linear-gradient(to top, rgba(205, 156, 242, 0.518) 0%, rgba(23, 26, 216, 0.593) 100%),url(img/IMAGEN=FONDO.jpg);
+    background-image: linear-gradient(to top, rgba(205, 156, 242, 0.518) 0%, rgba(23, 26, 216, 0.593) 150%),url(img/IMAGEN=FONDO.jpg);
     background-repeat:no-repeat;
     background-size: cover;
     background-attachment: fixed;
