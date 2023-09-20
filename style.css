@@ -36,6 +36,17 @@ h5{
     color: #fff;
 }
 
+<<<<<<< HEAD
+=======
+.log-icon{
+
+    height: 7rem;
+}
+.usu-icon{
+    height: 1rem;
+}
+
+>>>>>>> origin
 @media screen and(max-width: 767px){
     .navbar-brand{
         display: none;
