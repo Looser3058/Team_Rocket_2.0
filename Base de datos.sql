@@ -3,6 +3,7 @@ use tienda.animati_BD;
 
 -- --------------------------------------------------------
 
+
 CREATE TABLE `Cliente` (
   `DNI` int (8) primary key not null,
   `Correo Electronico` date (25),
@@ -12,6 +13,7 @@ CREATE TABLE `Cliente` (
   `Telefono` int (10),
   `Nro_pedido` foreign key, references  Pedidos (Nro_pedido)
 );
+
 
 Insert into Cliente (DNI, Correo Electronico, Nombre, Apellido, Direccion, Telefono, Nro_pedido)
 values
