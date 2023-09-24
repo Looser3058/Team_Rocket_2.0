@@ -5,8 +5,9 @@ from productos import Producto
 from pedidos import Pedidos
 
 # Usuarios
-usuario1 = Usuario("Juan", "juan@example.com")
-usuario2 = Usuario("María", "maria@example.com")
+usuario1 = Usuario("Juan Perez", "juanito_perez@gmail.com", Velez Sarfield 45, 3514055987)
+usuario2 = Usuario("Maria Diaz", "maria_diaz@gmail.com", Av Color 1500, 3515799135)
+usuario3 = Usuario("Esteban Lopez", "esteban_lopez@gmail.com", Simon Bolivar 560, 3515067981)
 
 # Crear productos
 producto001 = Producto("Posters", 200, Papeleria, 30)
