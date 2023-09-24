@@ -4,78 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/pagina-principal.css">
     <title>Animati</title>
 </head>
 <body>
   <!--Barra de navegación-->
   
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg inline-flex ">
         <div class="container d-flex justify-content-between">   
-          <button class="btn btn-success align-self-start" type="button" ><a class="nav-link" href="#">Registrarse/<br>Iniciar Sesion</a></button>
-          <p class="fs-1 text-center">ANIMATI PAPELERIA</p>
-          <a class="fs-4">Productos</a>
-          <a class="fs-4">Acerca de nosotros</a>
+          <button class="btn btn-primary align-self-center" type="button" ><a class="nav-link" href="#">Registrarse/<br>Iniciar Sesion</a></button>
+          <img class="img-fluid rounded" id="imagen-titulo" src="./img/Imagen de WhatsApp 2023-09-06 a las 10.41.37.jpg">
+          <button class="btn btn-success align-self-center" type="button"><a class="fs-3 text-decoration-none text-light">Productos</a></button>
           </div>
         
       </nav>
       <!--Cartas-->
       
-      <h1>Conoce nuestros productos</h1>
+      <h1 class="subtitulo py-2">Conocé nuestros productos</h1>
     <div class="container-fluid w-75 gx-2">
       <div class="row row-cols-2 g-3 row-cols-md-3 m-2">
 
         <div class="card text-center bg-success">
           <img src="./img/Imagen de WhatsApp 2023-09-06 a las 10.42.54.jpg" class="card-img-top mt-2" alt="...">
-          <div class="card-body text-center ">
+          <div class="card-body text-center fondo-carta">
             <h5 class="card-title">Producto 1</h5>
             <p class="card-text">Características</p>
-            <a href="#" class="btn btn-primary">Mostrar más</a>
+            
           </div>
         </div>
-        <div class="card text-center bg-success"">
+        <div class="card text-center bg-success">
           <img src="./img/Imagen de WhatsApp 2023-09-06 a las 10.43.22.jpg" class="card-img-top mt-2" alt="...">
-          <div class="card-body ">
+          <div class="card-body fondo-carta">
             <h5 class="card-title">Producto 2</h5>
             <p class="card-text">Características</p>
-            <a href="#" class="btn btn-primary">Mostrar más</a>
+            
           </div>
         </div>
         <div class="card text-center bg-success"">
           <img src="./img/Imagen de WhatsApp 2023-09-06 a las 10.43.24.jpg" class="card-img-top mt-2" alt="...">
-          <div class="card-body ">
+          <div class="card-body fondo-carta">
             <h5 class="card-title">Producto 3</h5>
             <p class="card-text">Características</p>
-            <a href="#" class="btn btn-primary">Mostrar más</a>
+            
           </div>
         </div>
         <div class="card text-center bg-success"">
           <img src="./img/Imagen de WhatsApp 2023-09-06 a las 10.43.34.jpg" class="card-img-top mt-2" alt="...">
-          <div class="card-body">
+          <div class="card-body fondo-carta">
             <h5 class="card-title">Producto 4</h5>
             <p class="card-text">Características</p>
-            <a href="#" class="btn btn-primary">Mostrar más</a>
+            
           </div>
         </div>
         <div class="card text-center bg-success"">
           <img  src="./img/Imagen de WhatsApp 2023-09-06 a las 10.43.47.jpg" class="card-img-top mt-2" alt="...">
-          <div class="card-body ">
+          <div class="card-body fondo-carta ">
             <h5 class="card-title">Producto 5</h5>
             <p class="card-text">Características</p>
-            <a href="#" class="btn btn-primary">Mostrar más</a>
+            
           </div>
         </div>
         <div class="card text-center bg-success"">
           <img src="./img/Imagen de WhatsApp 2023-09-06 a las 10.43.33.jpg" class="card-img-top mt-2" alt="...">
-          <div class="card-body ">
+          <div class="card-body fondo-carta">
             <h5 class="card-title">Producto 6</h5>
             <p class="card-text">Características</p>
-            <a href="#" class="btn btn-primary">Mostrar más</a>
+            
           </div>
         </div>
       </div>
     </div>
 
-     
+    <div class="d-flex justify-content-center pb-4">
+    <button type="button" class="btn btn-primary"><a>Ver galería de productos</a></button>
+    </div>
+
+    <div class="col-12">
+    <footer>
+      <table class="table table-danger margen ">
+      <thead>
+      <tr>
+        <th scope="col">ANIMATI PAPELERIA</th>
+        <th scope="col">CONTACTO:</th>
+      </tr>
+      </thead>
+      <tbody>  
+      <td>Diseños 100% originales!!!<br>
+      Aritos-Posters-Polaroids<br>
+      Cajas tematicas-Señaladores-etc
+      </td>
+      <td><i class="ri-instagram-line"></i><a class="text-decoration-none" href="https://www.instagram.com/animati_papeleria/">@animati_papelería</a>
+        <br>
+        <i class="ri-whatsapp-line"></i>(3521) 413315
+      </td>
+    </tbody>
+    </table>
+    </footer>
+    </div>
 </body>
 </html>
