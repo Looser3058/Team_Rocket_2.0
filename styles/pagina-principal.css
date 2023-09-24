@@ -12,4 +12,24 @@ body{
 h1{
     display:flex;
     justify-content:center;
+    background-color: rgb(141, 70, 207);
+}
+
+#imagen-titulo{
+    width:200px;
+    height: 100px;
+}
+
+.fondo-carta{
+    background-color:rgb(224, 128, 144);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 8px;
+}
+.margen{
+    margin-bottom: 0rem;
+     
+}
+table.bs-table-bg{
+    background-color:grey !important;
 }
