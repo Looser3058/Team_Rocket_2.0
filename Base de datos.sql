@@ -51,7 +51,7 @@ values
 (006, Cuadernos, Papeleria, $600, 20),
 (007, Lapiceras, Papeleria, $300, 5),
 (008, Señaladores, Papeleria, $300, 15),
-(009, Toma nota, Papeleria, $200, 5),
+(009, Anotadores, Papeleria, $200, 5),
 (010, Aritos, Accesorios, $400, 30),
 (011, Llaveros, Accesorios, $400, 30),
 (015, Collares, Accesorios, $500, 10),
