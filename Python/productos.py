@@ -8,7 +8,8 @@ class Producto:
         self.stock = stock
 
     def categoria(self):
-        Producto.categoria=("Papelería","Accesorios")
+        Producto.categoria=["Papelería","Accesorios"]
 
     def __str__(self):
         return f"Producto: {self.nombre}, Precio: {self.precio}, Categoria: {self.categoria}, Stock: {self.stock}"
+
