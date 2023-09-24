@@ -13,5 +13,4 @@ class Pedidos:
     def __str__(self):
         return f"Producto: {self.producto.nombre}, Cantidad: {self.cantidad}, Total: {self.calcular_total()}"
     
-    def venta():
-        venta
+    
