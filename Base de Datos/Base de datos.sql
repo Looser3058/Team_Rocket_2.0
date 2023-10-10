@@ -25,7 +25,7 @@ values
 
 CREATE TABLE `Pedidos` (
   `Nro_pedido` primary key auto_incremet,
-  `ID_del_Producto` int, foreign key, references Producto (ID_Producto),
+  `ID_Producto` int, foreign key, references Producto (ID_Producto),
   `DNI` int, foreign key, references Cliente (DNI),
   `Fecha_pedido` date,
   `Cantidad` int,
@@ -65,11 +65,27 @@ values
 CREATE TABLE `Categoria` (
   `Nro_categoria` primary key auto_incremet,
   `Nombre_categoria` varchar (30),
+  `Descripcion_categoria` varchar (30),
+
  
 );
 
-Insert into Categoria (Nro_categoria,Nombre_categoria,)
-values ( 1, Papeleria), (2, Accesorios), ;
+Insert into Categoria (Nro_categoria,Nombre_categoria,Descripcion_categoria)
+values ( 1, Papeleria, hojas y cuadernos), (2, Accesorios, mucha variedad de Accesorios ), ;
+
+-- --------------------------------------------------------
+
+-- --------------------------------------------------------
+CREATE TABLE `Usuario` (
+  `ID_Usuario` primary key auto_incremet,
+  `Nombre_Usuario` varchar (30),
+  `Correo_Usuario` varchar (30),
+  `Numero_Telefono` varchar (30),
+
+);
+
+Insert into Usuario (ID_Usuario,Nombre_Usuario,Correo_Usuario,Numero_Telefono)
+values ( 1, Pedro, Pepedro@hotmail.com, 351876512), (2, naty, naty02@hotmail.com, 2451123222 ), ;
 
 -- --------------------------------------------------------
 
@@ -78,5 +94,6 @@ values ( 1, Papeleria), (2, Accesorios), ;
    3) quite en la tabla Cliente el `Nro_pedido`con clave foránea a Pedido, ya que cuando cargemos el pedido traera el cliente y no al revez
    4) agrege clave foranea a pedido , con cliente a traves de su DNI.
    5) agrege los atributo fecha y cantidad a la tabla pedidos.
+   6) Agrege tabla usuario.
 
 */
