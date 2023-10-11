@@ -6,20 +6,18 @@ use tienda.animati_BD;
 
 CREATE TABLE `Cliente` (
   `DNI` int (8) primary key not null,
-  `Correo_Electronico` date (25),
   `Nombre` varchar (30),
   `Apellido` varchar (30),
   `Direccion ` varchar (40),
-  `Telefono` int (10),
-
+  `Nro de Usuario` int, foreign key, references Usuario (ID_Usuario)
 );
 
 
-Insert into Cliente (DNI, Correo_Electronico, Nombre, Apellido, Direccion, Telefono, )
+Insert into Cliente (DNI, Nombre, Apellido, Direccion, )
 values
- (45345678, juanito_perez@gmail.com, Juan, Perez, Velez Sarfield 45, 3514055987),
- (40456789, maria_diaz@gmail.com, Maria, Diaz, Av Color 1500, 3515799135),
- (35567019, esteban_lopez@gmail.com, Esteban, Lopez, Simon Bolivar 560, 3515067981);
+ (45345678, Juan, Perez, Velez Sarfield 45),
+ (40456789, Maria, Diaz, Av Color 1500),
+ (35567019, Esteban, Lopez, Simon Bolivar 565);
 
 -- --------------------------------------------------------
 
@@ -66,12 +64,13 @@ CREATE TABLE `Categoria` (
   `Nro_categoria` primary key auto_incremet,
   `Nombre_categoria` varchar (30),
   `Descripcion_categoria` varchar (30),
+  `ID_Producto` int, foreign key, references Producto (Id_Producto)
 
  
 );
 
 Insert into Categoria (Nro_categoria,Nombre_categoria,Descripcion_categoria)
-values ( 1, Papeleria, hojas y cuadernos), (2, Accesorios, mucha variedad de Accesorios ), ;
+values ( 1, Papeleria, hojas y cuadernos), (2, Accesorios, aritos collares y elementos de uso ), ;
 
 -- --------------------------------------------------------
 
@@ -96,4 +95,8 @@ values ( 1, Pedro, Pepedro@hotmail.com, 351876512), (2, naty, naty02@hotmail.com
    5) agrege los atributo fecha y cantidad a la tabla pedidos.
    6) Agrege tabla usuario.
 
+*/
+
+/* 1) Se quito los atributos "correo electronico" y "telefono" de la tabla cliente, ya que los mismos aparecen de nuevo en la tabla usuario.
+   2) Se agrego clave foranea a las tablas Categoria y cliente. 
 */
