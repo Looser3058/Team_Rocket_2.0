@@ -33,7 +33,7 @@
      <div class="d-flex justify-content-center">
        <img src="img/icono.ico" alt="login-icon" class="log-icon">
      </div>
-     <div class="text-center fs-1 fw-bold">Login</div>
+     <div class="text-center fs-1 fw-bold" >Login</div>
   </header>
   <main>
     <section>
@@ -47,7 +47,7 @@
        <div class="input-group-text bg-secondary">
         <img src="img-login/password-icon.svg" alt="icono-usuario" class="usu-icon">
        </div>
-       <input class="form-control bg-light" type="password" placeholder="password">
+       <input class="form-control bg-light" type="password" placeholder="password" pattern="[A-Za-z][A-Za-z0-9]*[0-9][A-Za-z0-9]*" title="La contraseña debe de contener al menos 8 digitos con números y letras mayúsculas" required>
      </div>
      <div class=" justify-content-around mt-1">
        <div class=" d-flex align-items-center gap-2">
@@ -57,7 +57,7 @@
            <a href="#" class="text-decoration-none text-info fw-semibold fst-italic" style="font-size: 0.9rem;">Forgot your password?</a>
          </div>
        </div>
-       <div class="btn btn-secondary text-white w-100 mt-4 fw-semibold shadow-sm">Login</div>
+       <div class="btn btn-secondary text-white w-100 mt-4 fw-semibold shadow-sm" onclick="login()">Login</div>
       </section>
       <section>
          <div class="d-flex gap-1 justify-content-center mt-1">
@@ -97,6 +97,23 @@
   </tbody>
   </table>
   </footer>
+  <script>
+    function login() {
+        var username = document.querySelector('input[type="text"]').value;
+        var password = document.querySelector('input[type="password"]').value;
+    
+        var usuario = "usuario";
+        var contraseña = "Password123";
+    
+        if (username === usuario && password === contraseña) {
+            alert("Inicio de sesión exitoso");
+      
+             window.location.href = 'Pagina-principal.html';
+        } else {
+            alert('Credenciales incorrectas. Por favor, inténtalo de nuevo.');
+        }
+    }
+    </script>
 </body>
 </html>
 
