@@ -33,3 +33,9 @@ h1{
 table.bs-table-bg{
     background-color:grey !important;
 }
+.cuadrado{
+    width: 125px;
+    height:15px;
+    background: rgb(224, 128, 144);
+    border:solid 3px rgb(224, 128, 144);
+}
