@@ -20,7 +20,6 @@ section{
     height: 130vh;
     background-color: rgb(151, 193, 218);
     background-repeat:no-repeat;
-    background-size: cover;
     background-attachment: fixed;
     background-position: center;
     min-height: 450px;
@@ -52,9 +51,15 @@ h5{
 
 
 .imagen{
-    width: 350px;
-    height: 250px;
-    margin-top: 40px;
+    max-width: fit-content;
+    min-width: none;
+    min-height: auto;
+    max-height: fit-content;
+    margin-top: 0%;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 body {
@@ -62,4 +67,9 @@ body {
     height: 100vh;
     margin: 0;
 
+}
+
+#imagen img {
+    width: 200px;
+    height: auto;
 }
