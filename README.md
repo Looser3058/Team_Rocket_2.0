@@ -20,3 +20,7 @@ Animati Papeleria es una papeleria donde se hacen todo tipo de suplemntos de lib
 2. Abre la carpeta "login.html" con tu navegador web predeterminado
 3. Para ingresar utiliza el usuario "usuario y la contraseña "Password123"
 4. Navega por las distintas paginas web :)
+
+##Derechos de autor
+
+Todos los derechos de esta web estan reservados para el Grupo 12 de la Tecnicatura Superior en Desarrollo Web y Aplicaciones Digitales del Instituto Superioir Politecnico Córdoba.
