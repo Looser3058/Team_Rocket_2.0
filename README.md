@@ -1,4 +1,4 @@
-# Tienda Web para Animati
+# Tienda Web para Animati Papeleria
 
 ![Logo de Animati Papeleria](./imagen-de-fondo.jpg)
 
