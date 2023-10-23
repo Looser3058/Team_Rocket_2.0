@@ -44,12 +44,6 @@ h5{
     height: 1rem;
 }
 
-@media screen and(max-width: 767px){
-    .navbar-brand{
-        display: none;
-    }
-}
-
 footer{
     position: fixed;
     bottom: 0;
