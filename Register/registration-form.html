@@ -4,6 +4,68 @@
     <meta charset="UTF-8">
     <title>Registro</title>
     <link rel="stylesheet" href="styles.css" />
+
+
+<script>
+  //validaciones en JavaScript
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form');
+    const nombreUsuario = document.querySelector('#Nombre_Usuario');
+    const numeroTelefono = document.querySelector('#Numero_Telefono');
+    const email = document.querySelector('#email');
+    const password = document.querySelector('#password');
+    const termsAndConditions = document.querySelector('#terms-and-conditions');
+
+    form.addEventListener('submit', function (event) {
+      // Valida el campo Nombre de Usuario
+      if (!nombreUsuario.checkValidity()) {
+        alert('El campo Nombre de Usuario es inválido.');
+        event.preventDefault(); // Evita que se envíe el formulario
+        return;
+      }
+
+      // Valida el campo Número de Teléfono 
+      if (!numeroTelefono.value.match(/^\d{10}$/)) {
+        alert('El campo Número de Teléfono debe tener 10 dígitos.');
+        event.preventDefault();
+        return;
+      }
+
+      // Valida el campo de Correo Electrónico
+      if (!email.checkValidity()) {
+        alert('El campo Correo Electrónico es inválido.');
+        event.preventDefault();
+        return;
+      }
+
+      // Valida el campo de Contraseña
+     if (!password.value.match(/^(?=.*[A-Z])(?=.*\d).{8,}$/)) {
+      alert(
+        'La contraseña debe contener al menos 8 caracteres con al menos una letra mayúscula y un número.'
+      );
+      event.preventDefault();
+      return;
+    }
+
+      // Valida si se aceptaron los términos y condiciones
+      if (!termsAndConditions.checked) {
+        alert('Debes aceptar los términos y condiciones para registrarte.');
+        event.preventDefault();
+        return;
+      }
+    });
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
   </head>
   <body>
     <h3>Registrarse</h3>
