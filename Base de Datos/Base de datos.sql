@@ -66,11 +66,12 @@ CREATE TABLE `Usuario` (
   `ID_Usuario` int PRIMARY KEY auto_increment,
   `Nombre_Usuario` varchar (30),
   `Correo_Usuario` varchar (30),
-  `Numero_Telefono` varchar (30)
+  `Numero_Telefono` varchar (30),
+  `password` varchar (30)
 );
 
-INSERT INTO Usuario (ID_Usuario,Nombre_Usuario,Correo_Usuario,Numero_Telefono)
-VALUES ( 1, "Pedro", "Pepedro@hotmail.com", 351876512), (2, "naty", "naty02@hotmail.com", 2451123222 );
+INSERT INTO Usuario (ID_Usuario, Nombre_Usuario, Correo_Usuario, Numero_Telefono, password )
+VALUES ( 1, "Pedro", "Pepedro@hotmail.com", 351876512, "1234"), (2, "naty", "naty02@hotmail.com", 2451123222 ,"1233" );
 
 
 /*
