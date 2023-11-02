@@ -3,7 +3,7 @@ body {
   height: 100vh;
   margin: 0;
   background-color: #68bbdc;
-  color: #b8d3ed;
+  color: #ffffff;
   font-family: Tahoma;
   font-size: 16px;
 }
@@ -30,7 +30,7 @@ form {
 fieldset {
   border: none;
   padding: 2rem 0;
-  border-bottom: 3px solid #df5ecc70;
+  border-bottom: 3px solid #00aaff70;
 }
 
 fieldset:last-of-type {
@@ -53,7 +53,7 @@ select {
 input, textarea {
   background-color: #b1deff;
   border: 1px solid #76b2eb;
-  color: #ffffff;
+  color: #000000;
 }
 
 .inline {
