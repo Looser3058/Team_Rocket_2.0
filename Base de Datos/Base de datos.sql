@@ -13,7 +13,7 @@ VALUES (1, "Papeleria", "hojas y cuadernos"), (2, "Accesorios", "mucha variedad 
 
 /*------------------------------------------------------------------------------------------*/
 CREATE TABLE `Producto` (
-  `ID_Producto` int PRIMARY KEY,
+  `ID_Producto` int AUTO_INCREMENT PRIMARY KEY NOT NULL,
   `Nombre_Producto` VARCHAR(25),
   `Precio` int,
   `Stock` int,
@@ -21,11 +21,11 @@ CREATE TABLE `Producto` (
   FOREIGN KEY (`Nro_categoria`) REFERENCES Categoria(`Nro_categoria`)
 );
 
-INSERT INTO Producto (ID_Producto, Nombre_Producto, Precio, Stock, `Nro_categoria`)
+INSERT INTO Producto (Nombre_Producto, Precio, Stock, `Nro_categoria`)
 VALUES 
-(1, "Posters", 200, 30, 1),
-(2, "Polaroid", 50, 400, 2),
-(3, "Vasos", 1000, 5, 1);
+("Posters", 200, 30, 1),
+("Polaroid", 50, 400, 2),
+("Vasos", 1000, 5, 1);
 
 
 /*------------------------------------------------------------------------------------------*/
