@@ -51,7 +51,7 @@ select {
 }
 
 input, textarea {
-  background-color: #b1deff;
+  background-color: #6397bd;
   border: 1px solid #76b2eb;
   color: #000000;
 }
@@ -78,9 +78,10 @@ input[type="file"] {
 }
 
 nav{
-  background-color: aquamarine;
+  background-color: #03A9F4;
   align-items: center;
 }
+
 header {
   background: #03A9F4;
   width: 100%;

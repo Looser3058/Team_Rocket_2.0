@@ -7,30 +7,31 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/pagina-principal.css">
     <title>Animati</title>
+    <link rel="icon" type="image/icon" href="img/icono.ico">
 </head>
 <body>
   <!--Barra de navegación-->
-
-  <nav class="navbar navbar-expand-lg">
-    <div class="container d-flex justify-content-between">
-      <a class="btn btn-dark align-self-center d-flex align-items-center" href="./login.html">
-        <img src="img-login/login-icon.svg" alt="login-icon" class="log-icon" style="max-width: 3rem;">
-        <span class="text-decoration-none" style="margin-left: 10px;">Crear Cuenta<br>Ingresar</span>
-      </a>
-      <img class="img-fluid rounded" id="imagen-titulo" src="./img/imagen1.jpg" alt="titulo">
+  <header>
+    <div class="menu">
+      <img src="img-login/login-icon.svg" alt="login-icon" class="log-icon" style="max-width: 2rem;">
+      <nav>
+          <ul>
+            <li><a href="./gallery.html">Galeria de productos</a></li>
+            <li><a href="./login.html">Iniciar sesion</a></li>
+            <li><a href="./registration-form.html">Registrarse</a></li>
+          </ul>
+      </nav>
     </div>
-  </nav>
-  
+  </header>
       <!--Cartas-->
     
-      <header> <h1 class="subtitulo py-2">Conocé nuestros productos</h1></header>
-     
       <main>
+      <h1 class="subtitulo py-2">Conocé nuestros productos</h1>
        <div class="container-fluid w-75 gx-2">
          <div class="row row-cols-2 g-3 row-cols-md-3 m-2">
            <section>
             <div class="card text-center bg-success">
-              <img src="./img/imagen5.jpg" class="card-img-top mt-2" alt="cubecraft">
+              <img src="./img/imagen5.jpg" class="card-img-top mt-2" alt="cubecraft" max-width="300px">
               <div class="card-body text-center fondo-carta">
                  <h5 class="card-title">Cubecraft</h5>
                  <p class="card-text">Llevate a tu muñeco preferido</p>
@@ -39,7 +40,7 @@
            </section>
            <section>
             <div class="card text-center bg-success">
-              <img src="./img/imagen10.jpg" class="card-img-top mt-2" alt="...">
+              <img src="./img/imagen10.jpg" class="card-img-top mt-2" alt="Cajas" max-width="300px">
               <div class="card-body fondo-carta">
                 <h5 class="card-title">Cajas personalizadas</h5>
                 <p class="card-text">Cajas temáticas para guardar tus cosas</p>
@@ -49,7 +50,7 @@
            </section>
            <section>
             <div class="card text-center bg-success">
-              <img src="./img/imagen12.jpg" class="card-img-top mt-2" alt="colgantes">
+              <img src="./img/imagen12.jpg" class="card-img-top mt-2" alt="colgantes" max-width="300px">
               <div class="card-body fondo-carta">
                 <h5 class="card-title">Colgantes</h5>
                 <p class="card-text">Completá tu outfit con los mejores personajes</p>
@@ -59,7 +60,7 @@
            </section>
            <section>
             <div class="card text-center bg-success">
-              <img src="./img/imagen14.jpg" class="card-img-top mt-2" alt="separadores">
+              <img src="./img/imagen14.jpg" class="card-img-top mt-2" alt="separadores" width="300px">
               <div class="card-body fondo-carta">
                 <h5 class="card-title">Separadores</h5>
                 <p class="card-text">Organizá tu carpeta con estos separadores</p>
@@ -69,7 +70,7 @@
            </section>
            <section>
             <div class="card text-center bg-success">
-              <img  src="./img/imagen16.jpg" class="card-img-top mt-2" alt="varios separadores">
+              <img  src="./img/imagen16.jpg" class="card-img-top mt-2" alt="varios separadores" width="300px">
               <div class="card-body fondo-carta">
                 <h5 class="card-title">Separadores</h5>
                 <p class="card-text">Marcá las páginas de tus libros</p>
@@ -79,7 +80,7 @@
            </section>
            <section>
             <div class="card text-center bg-success">
-              <img src="./img/imagen13.jpg" class="card-img-top mt-2" alt="stickers">
+              <img src="./img/imagen13.jpg" class="card-img-top mt-2" alt="stickers" width="300px">
               <div class="card-body fondo-carta">
                 <h5 class="card-title">Set de stickers</h5>
                 <p class="card-text">Para pegar en todos tus espacios</p>
@@ -89,7 +90,7 @@
          </div>
        </div>
   
-       <div class="d-flex justify-content-center pb-4">
+       <div class="d-flex justify-content-center pb-4" style="height: 95px">
         <a href="./gallery.html" class="btn btn-primary" style="font-size: 20px; padding: 20px 40px;">
           <span class="text-decoration-none"><img src="img/collection-icon.svg" alt="collection-icon" class="cxollection-icon" style="width: 2rem; ">  Ver Galería De Productos</span>
         </a>
