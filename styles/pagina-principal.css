@@ -35,6 +35,11 @@ h1{
   height: 300px;
 }
 
+#cubecraft{
+  width: 340px;
+  height: 300px;
+}
+
 .fondo-carta{
     background-color:rgb(224, 128, 144);
     border-bottom-right-radius: 10px;
