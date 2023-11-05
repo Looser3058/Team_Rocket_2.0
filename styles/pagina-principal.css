@@ -10,9 +10,29 @@ h1{
     background-color: rgb(141, 70, 207);
 }
 
-#imagen-titulo{
+#Cajas{
     width: 340px;
     height: 300px;
+}
+
+#colgantes{
+  width: 340px;
+  height: 300px;
+}
+
+#separadores{
+  width: 340px;
+  height: 300px;
+}
+
+#separadores-autoadhesivos{
+  width: 340px;
+  height: 300px;
+}
+
+#stickers{
+  width: 340px;
+  height: 300px;
 }
 
 .fondo-carta{
