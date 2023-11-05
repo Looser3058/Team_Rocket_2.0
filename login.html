@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Team_Rocket_2.0">
+  <meta name="description" content="proyectoweb">
+  <meta name="keywords" content="ANIME">
+  <title>Animati/Login</title>
+  <link rel="icon" type="image/icon" href="img/icono.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="css/stylo.css">
+</head>
+<body class="bg-info d-flex justify-content-center align-items-center vh-100">
+   <!--barra de navegacion (revisar)-->
+   
+  
+  <header>
+
+   <div class="bg-white p-5 rounded-4 text-secondary shadow" style="max-width: 20rem; width: 80%;">
+    <img src="img/imagen22.jpg" alt="icono-usuario" style="max-width: 25rem; width: 100%;">
+     <div class="d-flex justify-content-center">
+      
+       <img src="img-login/login-icon.svg" alt="login-icon" class="log-icon" style="max-width: 10rem; width: 40%;">
+     </div>
+     <div class="text-center fs-1 fw-bold" >Login</div>
+     </div>
+  </header>
+  <main>
+       <div class="input-group mt-3">
+        <div class="input-group-text bg-secondary">
+          <img src="img-login/username-icon.svg" alt="icono-usuario" class="usu-icon">
+        </div>
+        <input class="form-control" type="text" placeholder="username">
+      </div>
+      <div class="input-group mt-1">
+        <div class="input-group-text bg-secondary">
+         <img src="img-login/password-icon.svg" alt="icono-usuario" class="usu-icon">
+        </div>
+        <input class="form-control bg-light" type="password" placeholder="password" pattern="[A-Za-z][A-Za-z0-9]*[0-9][A-Za-z0-9]*">
+      </div>
+      <div class=" justify-content-around mt-1">
+        <div class=" d-flex align-items-center gap-2">
+          <input class="form-check-input" type="checkbox">
+          <div class="pt-1" style="font-size: 0.9rem;">Recuerdame</div>
+          <div class="pt-1">
+            <a href="#" class="text-decoration-none text-info fw-semibold fst-italic" style="font-size: 0.9rem;">Forgot your password?</a>
+          </div>
+        </div>
+      </div>
+        <div class="btn btn-secondary text-white w-100 mt-4 fw-semibold shadow-sm" onclick="login()">Login</div>
+          <div class="d-flex gap-1 justify-content-center mt-1">
+              <a href="#" class="text-decoration-none text-info fw-semibold">Register</a>
+            </div>
+           <div class="p-3">
+            <div class="border-bottom text-center" style="height: 0.9rem;">
+              <span class="bg-white px-3">¿No tienes Cuenta?</span>
+             </div>
+           </div>
+           <a href="register/registration-form.html" class="text-decoration-none">
+            <div class="btn d-flex gap-2 justify-content-center border mt-3 shadow-sm">
+              <img src="img-login/person-icon.svg" alt="google-icon" class="bi bi-person-fill-add"">
+              <div class="fw-semibold text-secondary">Registrarme</div>
+            </div>
+          </a>
+          <a href="./Pagina-principal.html" class="text-decoration-none">
+            <div class="btn d-flex gap-2 justify-content-center border mt-3 shadow-sm">
+              <img src="img-login/main-icon.svg" alt="main-icono" class="bi bi-house">
+              <div class="fw-semibold text-secondary"> Ir al sitio sin Iniciar Sesión</div>
+            </div>
+          </a>
+          <br>
+      
+  </main>
+  <footer>
+    <table class="table table-danger margen">
+    <thead>
+    <tr>
+      <th scope="col">ANIMATI PAPELERIA</th>
+      <th scope="col">CONTACTO:</th>
+    </tr>
+    </thead>
+    <tbody>  
+    <tr><td>Diseños 100% originales!!!<br>
+    Aritos-Posters-Polaroids<br>
+    Cajas tematicas-Señaladores-etc
+    </td><td><i class="ri-instagram-line"></i><a class="text-decoration-none" href="https://www.instagram.com/animati_papeleria/">@animati_papelería</a>
+      <br>
+      <i class="ri-whatsapp-line"></i>(3521) 413315
+    </td></tr>
+  </tbody>
+  </table>
+  </footer>
+  <script>
+    function login() {
+        var username = document.querySelector('input[type="text"]').value;
+        var password = document.querySelector('input[type="password"]').value;
+    
+        var usuario = "usuario";
+        var contraseña = "Password123";
+    
+        if (username === usuario && password === contraseña) {
+      
+             window.location.href = 'Pagina-principal.html';
+        } else {
+            alert('Contraseña o usuario incorrectos, intente nuevamente');
+        }
+    }
+    </script>
+</body>
+</html>
+

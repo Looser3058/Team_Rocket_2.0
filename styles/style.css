@@ -1,0 +1,58 @@
+.navbar{
+    padding: 1rem;
+    background-color: #ffffff;
+}
+.navbar-collapse{
+   align-items: center;
+  justify-content: space-between;
+
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero{
+
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(205, 156, 242, 0.518) 0%, rgba(23, 26, 216, 0.593) 150%),url(img/IMAGEN=FONDO.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #ffffff;
+    min-height: 450px;
+    text-align: center;
+}
+
+h1{
+    font-size: 5rem;
+    color: #353333;
+}
+h5{
+    color: #fff;
+}
+
+.log-icon{
+
+    height: 7rem;
+}
+.usu-icon{
+    height: 1rem;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+body{
+    position: relative;
+    padding-bottom: 3em;
+    margin: 0 auto;
+}
